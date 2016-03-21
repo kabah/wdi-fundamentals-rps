@@ -25,18 +25,22 @@ function getPlayerMove(move) {
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `getInput()`.
-    return var move = prompt();
-            if (move == null) {
-                return function getInput();
-            } else if (move !== null) {
-                return eval(string.length); {
-               if (string.length == 4)
-                        return "rock";
-                    } else if (string.length == 5)
-                        return "paper"; {
-                    } if (string.length == 8)
-                        return "scissors";
-                    } 
+    
+    // 1. is movve null? 
+    // yes: return getInput
+    // no: contine
+    // 2. is move valld?
+    // yes: contine
+    // no: return getInput
+    // 3. return move
+
+        if (move == null) {
+            return getInput();
+        } else if (move != 'rock' && move != 'paper' && move != 'scissors') {
+            return getInput();
+         } else {
+            return move;
+         }   
 }
             
 
